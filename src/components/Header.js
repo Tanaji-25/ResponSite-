@@ -3,13 +3,15 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-transparent p-6 flex justify-between items-center shadow-xl backdrop-blur-lg">
-      <h1 className="text-4xl font-bold text-white">My Dynamic Website</h1>
+    <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-8 flex justify-between items-center shadow-xl rounded-lg mb-12 hover:scale-105 transition-all duration-300">
+      <h1 className="text-5xl font-extrabold tracking-tight">
+        Dynamic Innovation, Bold Design
+      </h1>
       <nav>
-        <ul className="hidden md:flex space-x-8">
-          <li><a href="/" className="text-lg font-semibold text-white hover:text-yellow-400 transition duration-300 transform hover:scale-105">Home</a></li>
-          <li><a href="/about" className="text-lg font-semibold text-white hover:text-yellow-400 transition duration-300 transform hover:scale-105">About</a></li>
-          <li><a href="/contact" className="text-lg font-semibold text-white hover:text-yellow-400 transition duration-300 transform hover:scale-105">Contact</a></li>
+        <ul className="flex space-x-12 text-lg font-medium">
+          <li><a href="/" className="px-4 py-2 hover:bg-gold hover:text-black transition-all duration-300">Home</a></li>
+          <li><a href="/about" className="px-4 py-2 hover:bg-gold hover:text-black transition-all duration-300">About</a></li>
+          <li><a href="/contact" className="px-4 py-2 hover:bg-gold hover:text-black transition-all duration-300">Contact</a></li>
         </ul>
       </nav>
     </header>
