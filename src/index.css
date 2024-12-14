@@ -2,13 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global styles for background, font, and body */
 body {
-  background: linear-gradient(135deg, #3498db, #9b59b6); /* Blue to Purple Gradient */
-  background-size: cover;
+  background: linear-gradient(135deg, #4e73df 0%, #1cc88a 50%, #f6c23e 100%);
+  font-family: 'Poppins', sans-serif; /* For body text */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
-  color: white;
+  overflow-x: hidden;
 }
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; /* For headings */
+  color: #fff;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
