@@ -3,9 +3,9 @@ import React from 'react';
 
 const Container2 = () => {
   return (
-    <div className="p-6 bg-yellow-200 rounded-lg shadow-md mb-6 h-full">
-      <h2 className="text-xl font-semibold mb-4">Important Information</h2>
-      <p>This is a simple text block to display content with some spacing and styling.</p>
+    <div className="p-6 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-lg shadow-xl mb-8 hover:scale-105 transition-all duration-300">
+      <h2 className="text-2xl font-semibold text-black mb-4">Important Information</h2>
+      <p className="text-white">This text block is styled with a modern gradient background and smooth hover effects.</p>
     </div>
   );
 };

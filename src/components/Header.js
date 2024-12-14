@@ -3,9 +3,9 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-8 flex justify-between items-center shadow-xl rounded-lg mb-12 hover:scale-105 transition-all duration-300">
-      <h1 className="text-5xl font-extrabold tracking-tight">
-        Dynamic Innovation, Bold Design
+    <header className="bg-gradient-to-r from-indigo-800 via-teal-600 to-purple-600 text-white p-12 flex justify-between items-center shadow-xl mb-6 hover:scale-105 transition-all duration-300">
+      <h1 className="text-3xl font-extrabold tracking-tight">
+        <span className="text-gold">Innovating</span> the Future, One Step at a Time
       </h1>
       <nav>
         <ul className="flex space-x-12 text-lg font-medium">

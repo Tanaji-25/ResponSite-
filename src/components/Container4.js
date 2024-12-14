@@ -1,11 +1,11 @@
-// Container4.js
+// Container4.js (Static Content)
 import React from 'react';
 
 const Container4 = () => {
   return (
-    <div className="p-6 bg-green-200 rounded-lg shadow-md mb-6 min-h-[400px]">
-      <h3 className="text-xl font-semibold mb-4">Static Content</h3>
-      <p>Static information or images go here. Tailwind helps you style it quickly.</p>
+    <div className="p-6 bg-gradient-to-r from-teal-600 to-blue-700 rounded-lg shadow-xl mb-8 hover:scale-105 transition-all duration-300">
+      <h3 className="text-xl font-semibold text-black mb-4">Static Content</h3>
+      <p className="text-white">This static content block has a dynamic gradient background and smooth hover effects.</p>
     </div>
   );
 };
