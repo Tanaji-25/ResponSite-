@@ -1,7 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 
 const Sidebar = ({ onLogout }) => {
+  const history = useHistory(); // React Router hook to navigate programmatically
+
+  const handleLogout = () => {
+    onLogout(); // Call logout function passed from parent
+    history.push('/login'); // Redirect to login page
+  };
+
   return (
     <div className="w-64 min-h-screen bg-gradient-to-b from-indigo-900 via-teal-700 to-purple-900 text-white p-6 space-y-6">
       <NavLink
@@ -43,7 +50,7 @@ const Sidebar = ({ onLogout }) => {
 
       {/* Logout Button */}
       <button
-        onClick={onLogout}
+        onClick={handleLogout}
         className="block px-6 py-3 rounded-lg text-lg font-medium hover:bg-red-500 hover:text-white transition-all duration-300 text-gray-200"
       >
         Logout
